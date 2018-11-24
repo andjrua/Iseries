@@ -1,9 +1,9 @@
-#Author: your.email@your.domain.com
+#Author: and-rua@hotmail.com
 Feature: FOC and GA for EAB programs
 
   @eabdi15
   Scenario Outline: Comprobacion de menus dinamicos
-    Given I authentic with CJUPAVELE OCTUBR2018
+    Given I authentic with XXXXXXXX XXXXXXXX
     And Update the <DTAARA> <LIBRARY>
     When I submit <PROGRAM> <NAME>
     Then Verify the table
