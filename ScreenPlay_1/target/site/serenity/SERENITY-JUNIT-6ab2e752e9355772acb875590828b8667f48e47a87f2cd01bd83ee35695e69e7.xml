@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="13" name="Menus dinamicos" skipped="0" tests="13" time="423.42" timestamp="2018-10-26 04:44:31"><testcase name="Comprobacion de menus dinamicos"><failure message="Pantallas Diferentes" type="java.lang.AssertionError">Pantallas Diferentes</failure><system-err>Pantallas Diferentes&#13;
+co.com.bancolombia.screenplay.ejemplo.stepdefinitions.VerificacionEstadoStepDefinitions.verifico_identidad(VerificacionEstadoStepDefinitions.java:68)&#13;
+✽.Verifico identidad(src/test/resources/features/Menus.feature:10)&#13;
+</system-err></testcase></testsuite>

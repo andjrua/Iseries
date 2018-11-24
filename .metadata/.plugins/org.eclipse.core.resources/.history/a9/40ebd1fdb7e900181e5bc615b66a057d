@@ -1,0 +1,40 @@
+package co.com.bancolombia.screenplay.ejemplo.tasks;
+
+import static co.com.bancolombia.screenplay.ejemplo.userinterfaces.SubMenu.*;
+import static co.com.bancolombia.screenplay.ejemplo.userinterfaces.TVPMenuPruebas.OPCION;
+import static net.serenitybdd.screenplay.Tasks.instrumented;
+
+import com.bancolombia.myextra.interactions.Enter;
+import com.bancolombia.myextra.interactions.Hit;
+
+import co.com.bancolombia.screenplay.ejemplo.model.SQL;
+import net.serenitybdd.screenplay.Actor;
+import net.serenitybdd.screenplay.Performable;
+import net.serenitybdd.screenplay.Task;
+
+public class Consultar implements Task {
+
+	private SQL query;
+	public String sql = "SELECT * FROM TDCLIBRAMD.TDCFFMOFV WHERE CTRL = 12345678910 AND PTRL = 10987654321";
+	
+	public Consultar (SQL query) {
+		this.query = query;
+	}
+	
+	
+	public static Performable el(SQL query) {
+		return instrumented(Consultar.class, query);
+	}
+
+	@Override
+	public <T extends Actor> void performAs(T actor) {
+		actor.attemptsTo(
+				Enter.theValue("11").into(OPCION),
+				Hit.theKey("<ENTER>"),
+				Hit.theKey("<ROLLUP>"),
+				Hit.theKey(sql)
+				);
+			
+	}
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;google_translate.feature&apos; to &apos;Gmail/src/test/resources/features&apos;&#x0D;&#x0A;- Original project: &apos;GoogleSuit&apos;&#x0D;&#x0A;- Destination element: &apos;Gmail/src/test/resources/features&apos;&#x0D;&#x0A;- Original element: &apos;google_translate.feature&apos;" description="Copy file" destination="=Gmail/src\/test\/resources&lt;features" element1="src/test/resources/features/google_translate.feature" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1537220310177" units="0" version="1.0"/>
+</session>

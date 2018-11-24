@@ -1,0 +1,30 @@
+package co.com.bancolombia.screenplay.toolsqa.stepdefinitions;
+
+import cucumber.api.java.Before;
+import cucumber.api.java.ast.Cuando;
+import cucumber.api.java.es.Entonces;
+import net.serenitybdd.screenplay.actors.OnStage;
+import net.serenitybdd.screenplay.actors.OnlineCast;
+
+public class IngresarMyExtra {
+
+	@Before
+	public void prepararEscenario() {
+		OnStage.setTheStage(new OnlineCast());
+		}
+	
+	
+	@Cuando("^me autentico con usuario pepe y contraseña xxxxxx$")
+	public void meAutenticoConUsuarioPepeYContraseñaXxxxxx() throws Exception {
+	    T
+	    
+	}
+
+
+	@Entonces("^deberia ver las opcion xxxx$")
+	public void deberiaVerLasOpcionXxxx() throws Exception {
+	    
+	    
+	}
+	
+}

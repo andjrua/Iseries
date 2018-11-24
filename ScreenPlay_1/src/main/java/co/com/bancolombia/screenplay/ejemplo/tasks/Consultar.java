@@ -1,0 +1,72 @@
+package co.com.bancolombia.screenplay.ejemplo.tasks;
+
+import static co.com.bancolombia.screenplay.ejemplo.userinterfaces.SubMenu.*;
+import static co.com.bancolombia.screenplay.ejemplo.userinterfaces.TVPMenuPruebas.OPCION;
+import static net.serenitybdd.screenplay.Tasks.instrumented;
+
+import com.bancolombia.myextra.interactions.Enter;
+import com.bancolombia.myextra.interactions.Hit;
+
+import co.com.bancolombia.screenplay.ejemplo.model.SQL;
+import net.serenitybdd.screenplay.Actor;
+import net.serenitybdd.screenplay.Performable;
+import net.serenitybdd.screenplay.Task;
+
+public class Consultar implements Task {
+
+	private SQL query;
+	public String sql = "SELECT A.*, B.AMBS2_448 FROM ( "
+			+ "SELECT A.AMPS3_001, A.AMPS3_002, AMPS3_054, CURRENT_OTROS, AMPS3_295, "
+			+ "MORA_OTROS, AMPS3_295 + MORA_OTROS "
+			+ "FROM ( "
+			+ "SELECT AMPS3_001, AMPS3_002, AMPS3_003, AMPS3_005, AMPS3_307, AMPS3_054, "
+			+ "AMPS3_295 FROM TDCLIBRAMD.TDCFFAMPS3 "
+			+ "WHERE AMPS3_307 = 'M') A "
+			+ "LEFT JOIN "
+			+ "(SELECT AMPS3_001, AMPS3_002, SUM(AMPS3_054) CURRENT_OTROS, "
+			+ "SUM(CASE WHEN AMPS3_068 > AMPS3_331 THEN AMPS3_068 - AMPS3_331 ELSE '0' "
+			+ "END + CASE WHEN AMPS3_070 > AMPS3_098 THEN AMPS3_070 - AMPS3_098 "
+			+ "ELSE '0' END + CASE WHEN AMPS3_074 > AMPS3_102 "
+			+ "THEN AMPS3_074 - AMPS3_102 "
+			+ "ELSE '0' END + CASE WHEN AMPS3_086 > AMPS3_108 "
+			+ "THEN AMPS3_086 - AMPS3_108 "
+			+ "ELSE '0' END + CASE WHEN AMPS3_088 > AMPS3_110 "
+			+ "THEN AMPS3_088 - AMPS3_110 "
+			+ "ELSE '0' END + "
+			+ "CASE WHEN AMPS3_090 > AMPS3_112 THEN AMPS3_090 - AMPS3_112 ELSE '0' END + "
+			+ "CASE WHEN AMPS3_092 > AMPS3_114 THEN AMPS3_092 - AMPS3_114 ELSE '0' END + "
+			+ "CASE WHEN AMPS3_094 > AMPS3_116 THEN AMPS3_094 - AMPS3_116 ELSE '0' END + "
+			+ "CASE WHEN AMPS3_096 > AMPS3_118 THEN AMPS3_096 - AMPS3_118 ELSE '0' END)  "
+			+ "MORA_OTROS "
+			+ "FROM TDCLIBRAMD.TDCFFAMPS3 WHERE AMPS3_307 <> 'M' "
+			+ "GROUP BY AMPS3_001, AMPS3_002) B ";
+	public String sql2 = "ON A.AMPS3_001 = B.AMPS3_001 AND A.AMPS3_002 = B.AMPS3_002 "
+			+ ") A "
+			+ "INNER JOIN TDCLIBRAMD.TDCFFAMBS2 B ON A.AMPS3_001= B.AMBS2_001 AND "
+			+ "A.AMPS3_002 = B.AMBS2_002 "
+			+ "WHERE B.AMBS2_448 >= 1 "
+			+ "AND AMBS2_003 NOT IN ('403','408','409','410','414','604','610','613','614','706','707','708')";
+	
+	public Consultar (SQL query) {
+		this.query = query;
+	}
+	
+	
+	public static Performable el(SQL query) {
+		return instrumented(Consultar.class, query);
+	}
+
+	@Override
+	public <T extends Actor> void performAs(T actor) {
+		actor.attemptsTo(
+				Enter.theValue("11").into(OPCION),
+				Hit.theKey("<ENTER>"),
+				Hit.theKey("<ROLLUP>"),
+				Hit.theKey(sql),
+				Hit.theKey("<ROLLUP>"),
+				Hit.theKey(sql2)
+				);
+			
+	}
+
+}

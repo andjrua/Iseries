@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="agregar accesorio al carro de compras" skipped="0" tests="1" time="21.31" timestamp="2018-07-24 08:16:16"><testcase name="agregar producto exitosamente"><failure message="&#10;Expected: is &quot;1&quot;&#10;     but: was &quot;0&quot;" type="java.lang.AssertionError">
+Expected: is "1"
+     but: was "0"</failure><system-err>
+Expected: is "1"
+     but: was "0"&#13;
+co.com.bancolombia.screenplay.toolsqa.stepdefinitions.AgregarProductosSteps.elArticuloSeDebeObservarEnElCarroDeCompras(AgregarProductosSteps.java:42)&#13;
+✽.el articulo se debe observar en el carro de compras(src/test/resources/features/agregar_productos.feature:10)&#13;
+</system-err></testcase></testsuite>
