@@ -4,7 +4,7 @@ Feature: Menus dinamicos
 
   @tag1
   Scenario Outline: Comprobacion de menus dinamicos
-    Given que me autentico con usuario CJOANJIME y contraseña JORGE1989
+    Given que me autentico con usuario XXXXXXX y contraseña XXXXXXXXX
     And introduce a library MATLIBRP
     When I search the menu <APLICATIVO> <OPTIONS1> <OPTIONS2>
     Then Verifico identidad
