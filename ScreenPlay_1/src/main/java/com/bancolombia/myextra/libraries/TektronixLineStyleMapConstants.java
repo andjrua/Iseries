@@ -7,6 +7,7 @@ import com4j.*;
  * Constants used by the TektronixLineStyleMap property
  * </p>
  */
+@SuppressWarnings("unused")
 public enum TektronixLineStyleMapConstants {
   /**
    * <p>

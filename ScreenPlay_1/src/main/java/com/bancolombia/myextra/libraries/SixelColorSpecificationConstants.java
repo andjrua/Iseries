@@ -7,6 +7,7 @@ import com4j.*;
  * Constants used by the SixelColorSpecification property
  * </p>
  */
+@SuppressWarnings("unused")
 public enum SixelColorSpecificationConstants {
   /**
    * <p>

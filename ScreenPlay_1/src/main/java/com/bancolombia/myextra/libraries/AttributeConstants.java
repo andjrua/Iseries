@@ -7,6 +7,7 @@ import com4j.*;
  * Constants used by the AttributeForeground and AttributeBackground property
  * </p>
  */
+@SuppressWarnings("unused")
 public enum AttributeConstants {
   /**
    * <p>

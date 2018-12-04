@@ -7,6 +7,7 @@ import com4j.*;
  * Constants used by the EditFunctionKeys property
  * </p>
  */
+@SuppressWarnings("unused")
 public enum EditFunctionKeysConstants {
   /**
    * <p>

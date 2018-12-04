@@ -7,6 +7,7 @@ import com4j.*;
  * Constants used by the StatusDisplay property
  * </p>
  */
+@SuppressWarnings("unused")
 public enum StatusDisplayConstants {
   /**
    * <p>

@@ -43,4 +43,5 @@ dependencies {
     compile 'net.sf.jt400:jt400:9.5'
     compile 'org.jvnet.com4j:com4j:2.1'
 }
-gradle.startParameter.continueOnFailure = true 
+gradle.startParameter.continueOnFailure = true
+test.finalizedBy(aggregate)

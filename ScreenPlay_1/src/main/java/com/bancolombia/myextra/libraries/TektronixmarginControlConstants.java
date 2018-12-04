@@ -7,6 +7,7 @@ import com4j.*;
  * Constants used by the TektronixmarginControl property
  * </p>
  */
+@SuppressWarnings("unused")
 public enum TektronixmarginControlConstants {
   /**
    * <p>

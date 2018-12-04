@@ -7,6 +7,7 @@ import com4j.*;
  * Constants used by the BreakLength property
  * </p>
  */
+@SuppressWarnings("unused")
 public enum BreakLengthConstants {
   /**
    * <p>

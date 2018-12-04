@@ -7,6 +7,7 @@ import com4j.*;
  * Constants used by the HistoryMaxSize property
  * </p>
  */
+@SuppressWarnings("unused")
 public enum HistMaxSizeConstants {
   /**
    * <p>

@@ -7,6 +7,7 @@ import com4j.*;
  * How strings are handled with protected fields.
  * </p>
  */
+@SuppressWarnings("unused")
 public enum ATM_PUTSTRING {
   /**
    * <p>

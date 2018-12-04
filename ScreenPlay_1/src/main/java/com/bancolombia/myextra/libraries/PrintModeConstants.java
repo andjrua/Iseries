@@ -7,6 +7,7 @@ import com4j.*;
  * Constants used by the PrintMode property
  * </p>
  */
+@SuppressWarnings("unused")
 public enum PrintModeConstants {
   /**
    * <p>

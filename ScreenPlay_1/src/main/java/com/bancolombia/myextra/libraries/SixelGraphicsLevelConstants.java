@@ -7,6 +7,7 @@ import com4j.*;
  * Constants used by the SixelGraphicsLevel property
  * </p>
  */
+@SuppressWarnings("unused")
 public enum SixelGraphicsLevelConstants {
   /**
    * <p>

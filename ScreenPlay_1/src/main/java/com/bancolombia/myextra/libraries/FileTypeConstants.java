@@ -7,6 +7,7 @@ import com4j.*;
  * Constants used by the FileType property
  * </p>
  */
+@SuppressWarnings("unused")
 public enum FileTypeConstants {
   /**
    * <p>

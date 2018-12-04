@@ -1,7 +1,7 @@
 package co.com.bancolombia.screenplay.ejemplo.stepdefinitions;
 
 import static co.com.bancolombia.screenplay.ejemplo.model.builder.UsuarioBuilder.usuario;
-import static co.com.bancolombia.screenplay.ejemplo.model.builder.SQLBuilder.query;
+//import static co.com.bancolombia.screenplay.ejemplo.model.builder.SQLBuilder.query;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorCalled;
 
 //import com.bancolombia.myextra.interactions.CloseMyExtra;
@@ -31,9 +31,9 @@ public class EABFOCGAStepDefinitions {
 		theActorCalled("Jorge").wasAbleTo(Autenticar.al(usuario(user).conContrasena(pass)),StarTVP.al());
 	}
 
-	@Given("^Update the (.*) (.*)$")
-	public void update_the(String dta, String lib) throws Exception {
-		theActorCalled("Jorge").wasAbleTo(ChgDta.al(dta, lib));
+	@Given("^Update the (.*) (.*) (.*) (.*) (.*)$")
+	public void update_the(String dta, String lib, String ini, String lon, String dig) throws Exception {
+		theActorCalled("Jorge").wasAbleTo(ChgDta.al(dta, lib, ini, lon, dig));
 	}
 
 	@When("^I submit (.*) (.*)$")
@@ -47,9 +47,9 @@ public class EABFOCGAStepDefinitions {
 		theActorCalled("Jorge").wasAbleTo(Conectar.al());
 	}
 	
-	@When("^Make a sql (.*) (.*) (.*) (.*) (.*)$")
-	public void makeASqlSELECTTDCLIBRAMDRMUFFVISA(String query, String type, String db, String table, String where) throws Exception {
-		theActorCalled("Jorge").wasAbleTo(Consultar.el(query(query).para(type).en(db).tabla(table).donde(where).build()));
+	@When("^Make a sql$")
+	public void makeASqlSELECTTDCLIBRAMDRMUFFVISA() throws Exception {
+		theActorCalled("Jorge").wasAbleTo(Consultar.el());
 	}
 	
 	@Then("^Verify the table$")

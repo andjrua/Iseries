@@ -7,6 +7,7 @@ import com4j.*;
  * Constants used by the DataBits property
  * </p>
  */
+@SuppressWarnings("unused")
 public enum DataBitsConstants {
   /**
    * <p>

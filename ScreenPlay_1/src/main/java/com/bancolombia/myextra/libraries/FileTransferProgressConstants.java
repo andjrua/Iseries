@@ -7,6 +7,7 @@ import com4j.*;
  * Constants for file transfer progress type
  * </p>
  */
+@SuppressWarnings("unused")
 public enum FileTransferProgressConstants {
   /**
    * <p>

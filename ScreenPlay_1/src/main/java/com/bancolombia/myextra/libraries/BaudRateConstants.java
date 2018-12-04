@@ -7,6 +7,7 @@ import com4j.*;
  * Constants used by the BaudRate property
  * </p>
  */
+@SuppressWarnings("unused")
 public enum BaudRateConstants {
   /**
    * <p>

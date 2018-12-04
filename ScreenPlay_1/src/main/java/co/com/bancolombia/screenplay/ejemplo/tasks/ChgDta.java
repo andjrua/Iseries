@@ -16,19 +16,25 @@ public class ChgDta implements Task {
 	private static MyExtra myExtra;
 	private final String dta;
 	private final String lib;
+	private final String ini;
+	private final String lon;
+	private final String dig;
 
 	public static MyExtra sesion() {
 		return myExtra;
 	}
 	
-	public static ChgDta al(String dta, String lib) {
-		return instrumented(ChgDta.class, dta, lib);
+	public static ChgDta al(String dta, String lib, String ini, String lon, String dig) {
+		return instrumented(ChgDta.class, dta, lib, ini, lon, dig);
 				}
 	
 	
-	public ChgDta(String dta, String lib) {
+	public ChgDta(String dta, String lib, String ini, String lon, String dig) {
 		this.dta = dta;
 		this.lib = lib;
+		this.dig = dig;
+		this.ini = ini;
+		this.lon = lon;
 	}
 
 	@Override
@@ -40,13 +46,16 @@ public class ChgDta implements Task {
 				Enter.theValue("CHGDTAARA " + dta).into(MANDATO_SBM),
 				Hit.theKey("<PF4>"),
 				Enter.theValue(lib).into(LIB_DAT),
-				Enter.theValue("1   ").into(INI_SUB),
-				Enter.theValue("5").into(LONG_SUB),
-				Enter.theValue("'00000'").into(VAL_SUB),
+				Enter.theValue(ini).into(INI_SUB),
+				Hit.theKey("<DELETE>"),
+				Hit.theKey("<DELETE>"),
+				Hit.theKey("<DELETE>"),
+				Enter.theValue(lon).into(LONG_SUB),
+				Enter.theValue("'" + dig + "'").into(VAL_SUB),
 				Hit.theKey("<ENTER>"),
-				Enter.theValue("JJJJJJJ").into(NOMBREJOB_SBM),
-				Enter.theValue("EABJOBD").into(DESCRIPCIONJOB_SBM),
-				Enter.theValue(lib).into(BIBLIOTECA_SBM),
+				Enter.theValue(dta.substring(0, 3)+"CHDT").into(NOMBREJOB_SBM),
+				Enter.theValue(dta.substring(0, 3)+"JOBD").into(DESCRIPCIONJOB_SBM),
+				Enter.theValue(dta.substring(0, 3)+"LIBRAMD").into(BIBLIOTECA_SBM),
 				Hit.theKey("<PF10>"),
 				Hit.theKey("<ROLLUP>"),
 				Enter.theValue("*JOBD   ").into(USUARIO_SBM),

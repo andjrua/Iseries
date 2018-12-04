@@ -7,6 +7,7 @@ import com4j.*;
  * Constants used by the BlockCheck property
  * </p>
  */
+@SuppressWarnings("unused")
 public enum BlockCheckConstants {
   /**
    * <p>

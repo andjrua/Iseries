@@ -7,6 +7,7 @@ import com4j.*;
  * A character text region on which to perform operations.
  * </p>
  */
+@SuppressWarnings("unused")
 public enum ATM_AREA {
   /**
    * <p>

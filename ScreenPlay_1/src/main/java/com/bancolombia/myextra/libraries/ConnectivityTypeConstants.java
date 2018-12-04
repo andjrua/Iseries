@@ -7,6 +7,7 @@ import com4j.*;
  * Constants used by the Connectivity.Type property
  * </p>
  */
+@SuppressWarnings("unused")
 public enum ConnectivityTypeConstants {
   /**
    * <p>

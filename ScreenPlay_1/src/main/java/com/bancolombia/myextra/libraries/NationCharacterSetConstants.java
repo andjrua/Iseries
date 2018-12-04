@@ -7,6 +7,7 @@ import com4j.*;
  * Constants used by the NationCharacterSet property
  * </p>
  */
+@SuppressWarnings("unused")
 public enum NationCharacterSetConstants {
   /**
    * <p>

@@ -11,7 +11,7 @@ import net.serenitybdd.cucumber.CucumberWithSerenity;
 		snippets = SnippetType.CAMELCASE,
 		features = {"src/test/resources/features/EABFOCGA.feature"},
 		glue = {"co.com.bancolombia.screenplay.ejemplo.stepdefinitions"},
-		tags = {"@tvpdi43"}
+		tags = {"@eabdi15"}
 		)
 
 public class Autenticar {

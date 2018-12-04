@@ -7,6 +7,7 @@ import com4j.*;
  * Constants used by the RemoteKermit property
  * </p>
  */
+@SuppressWarnings("unused")
 public enum RemoteKermitConstants {
   /**
    * <p>

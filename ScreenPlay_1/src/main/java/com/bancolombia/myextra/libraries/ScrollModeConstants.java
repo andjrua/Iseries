@@ -7,6 +7,7 @@ import com4j.*;
  * Constants used by the Scroll property
  * </p>
  */
+@SuppressWarnings("unused")
 public enum ScrollModeConstants {
   /**
    * <p>

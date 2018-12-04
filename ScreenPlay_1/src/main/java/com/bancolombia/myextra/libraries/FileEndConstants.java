@@ -7,6 +7,7 @@ import com4j.*;
  * Constants for possible results of file transfer
  * </p>
  */
+@SuppressWarnings("unused")
 public enum FileEndConstants {
   /**
    * <p>

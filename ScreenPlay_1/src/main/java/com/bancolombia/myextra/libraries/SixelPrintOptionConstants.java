@@ -7,6 +7,7 @@ import com4j.*;
  * Constants used by the SixelPrintOption property
  * </p>
  */
+@SuppressWarnings("unused")
 public enum SixelPrintOptionConstants {
   /**
    * <p>

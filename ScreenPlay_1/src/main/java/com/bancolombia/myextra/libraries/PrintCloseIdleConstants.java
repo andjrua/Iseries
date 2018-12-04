@@ -7,6 +7,7 @@ import com4j.*;
  * Constants used by the PrintCloseIdle property
  * </p>
  */
+@SuppressWarnings("unused")
 public enum PrintCloseIdleConstants {
   /**
    * <p>

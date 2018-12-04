@@ -1,19 +1,13 @@
 package co.com.bancolombia.screenplay.ejemplo.tasks;
 
 import static co.com.bancolombia.screenplay.ejemplo.userinterfaces.LlamarPrograma.PROGRAMA_CALL;
-//import static co.com.bancolombia.screenplay.ejemplo.userinterfaces.LoginPage.USUARIO;
-import static co.com.bancolombia.screenplay.ejemplo.userinterfaces.SubMenu.POSICION1001;
 import static co.com.bancolombia.screenplay.ejemplo.userinterfaces.TVPMenuPruebas.OPCION;
-import static co.com.bancolombia.screenplay.ejemplo.userinterfaces.UmenuUserInterfaces.TVP;
-import static co.com.bancolombia.screenplay.ejemplo.userinterfaces.VentanaMenuSubmenuUserInterfaces.POSICION1;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
 import com.bancolombia.myextra.controller.MyExtra;
 import com.bancolombia.myextra.interactions.Enter;
 import com.bancolombia.myextra.interactions.Hit;
 
-//import co.com.bancolombia.screenplay.ejemplo.model.Programa;
-//import co.com.bancolombia.screenplay.ejemplo.model.Usuario;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 

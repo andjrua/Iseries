@@ -7,6 +7,7 @@ import com4j.*;
  * Constants used by the PacketSize property
  * </p>
  */
+@SuppressWarnings("unused")
 public enum PacketSizeConstants {
   /**
    * <p>

@@ -7,6 +7,7 @@ import com4j.*;
  * Constants used by the BufferSize properties
  * </p>
  */
+@SuppressWarnings("unused")
 public enum BufferSizeConstants {
   /**
    * <p>

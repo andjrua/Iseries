@@ -7,6 +7,7 @@ import com4j.*;
  * Constants used by the StopBits property
  * </p>
  */
+@SuppressWarnings("unused")
 public enum StopBitsConstants {
   /**
    * <p>

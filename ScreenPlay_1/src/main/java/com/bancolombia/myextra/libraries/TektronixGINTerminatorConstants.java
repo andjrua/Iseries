@@ -7,6 +7,7 @@ import com4j.*;
  * Constants used by the TektronixGINTerminator property
  * </p>
  */
+@SuppressWarnings("unused")
 public enum TektronixGINTerminatorConstants {
   /**
    * <p>

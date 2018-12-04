@@ -7,6 +7,7 @@ import com4j.*;
  * Constants used by the Protocol property
  * </p>
  */
+@SuppressWarnings("unused")
 public enum ProtocolConstants {
   /**
    * <p>

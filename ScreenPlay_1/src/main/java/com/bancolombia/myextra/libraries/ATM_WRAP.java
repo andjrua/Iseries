@@ -7,6 +7,7 @@ import com4j.*;
  * Screen wrapping characteristics.
  * </p>
  */
+@SuppressWarnings("unused")
 public enum ATM_WRAP {
   /**
    * <p>

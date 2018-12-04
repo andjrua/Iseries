@@ -7,6 +7,7 @@ import com4j.*;
  * Constants used by the Parity property
  * </p>
  */
+@SuppressWarnings("unused")
 public enum ParityConstants {
   /**
    * <p>

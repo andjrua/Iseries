@@ -7,6 +7,7 @@ import com4j.*;
  * Constants used by the FunctionKey properties
  * </p>
  */
+@SuppressWarnings("unused")
 public enum FunctionKeyConstants {
   /**
    * <p>
